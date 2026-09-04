@@ -1,0 +1,528 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.view-card-page {
+  min-height: 100vh;
+
+  background: #f6f9fd;
+
+  color: #14243a;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.view-card-header {
+  height: 90px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e2e9f1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 60px;
+}
+
+
+.view-card-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+.view-card-header-left h1 {
+  margin: 0;
+
+  font-size: 27px;
+
+  font-weight: 600;
+}
+
+
+/* Back button */
+
+.view-card-back {
+  width: 45px;
+
+  height: 45px;
+
+  border: none;
+
+  background: transparent;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #14243a;
+}
+
+
+.view-card-back:hover {
+  background: #eef5fc;
+
+  border-radius: 50%;
+}
+
+
+/* Secure */
+
+.view-card-secure {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #145aa5;
+}
+
+
+.view-card-secure div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.view-card-secure strong {
+  font-size: 16px;
+}
+
+
+.view-card-secure span {
+  font-size: 11px;
+
+  color: #687789;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.view-card-content {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 35px 25px 60px;
+}
+
+
+/* =========================================
+   CARDS WRAPPER
+========================================= */
+
+.cards-wrapper {
+  width: 900px;
+
+  max-width: 100%;
+}
+
+
+.cards-title {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+
+.cards-title h2 {
+  margin: 0;
+
+  font-size: 25px;
+
+  font-weight: 600;
+}
+
+
+.cards-title span {
+  color: #687789;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   CARD LIST
+========================================= */
+
+.cards-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   SAVED CARD ITEM
+========================================= */
+
+.saved-card-item {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 20px 25px 22px;
+
+  position: relative;
+
+  border: 1px solid #e2eaf3;
+
+  box-shadow:
+    0 4px 18px rgba(20, 70, 120, 0.06);
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-card-button {
+  position: absolute;
+
+  top: 18px;
+
+  right: 20px;
+
+  width: 38px;
+
+  height: 38px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #fff1f1;
+
+  color: #d93025;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+
+.delete-card-button:hover {
+  background: #ffe1e1;
+}
+
+
+/* =========================================
+   BANK NAME
+========================================= */
+
+.saved-bank-name {
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #14243a;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================================
+   SMALL DEBIT CARD
+========================================= */
+
+.debit-card {
+  width: 270px;
+  height: 150px;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #075eb5, #168ee0);
+  color: white;
+  box-sizing: border-box;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.card-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.chip {
+  width: 35px;
+  height: 25px;
+  border-radius: 5px;
+  background: #d6b45c;
+  margin-top: 13px;
+}
+
+.card-number {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  margin-top: 13px;
+}
+
+.card-bottom {
+  display: flex;
+  gap: 25px;
+  margin-top: 12px;
+}
+
+.card-bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card-bottom span {
+  font-size: 7px;
+  opacity: 0.8;
+}
+
+.card-bottom strong {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   CARD INFORMATION
+========================================= */
+
+.card-information {
+  margin-top: 18px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  padding-right: 55px;
+}
+
+
+.card-information div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.card-information span {
+  font-size: 11px;
+
+  color: #778595;
+}
+
+
+.card-information strong {
+  font-size: 13px;
+
+  color: #14243a;
+
+  word-break: break-word;
+}
+
+
+/* =========================================
+   ADD ANOTHER CARD
+========================================= */
+
+.add-another-card {
+  width: 100%;
+
+  height: 50px;
+
+  margin-top: 25px;
+
+  border: 1px dashed #168ee0;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #168ee0;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+}
+
+
+.add-another-card:hover {
+  background: #f0f8ff;
+}
+
+
+/* =========================================
+   NO CARD
+========================================= */
+
+.no-card {
+  width: 450px;
+
+  max-width: 100%;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 50px 35px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(20, 70, 120, 0.07);
+
+  color: #145aa5;
+}
+
+
+.no-card h2 {
+  color: #14243a;
+
+  margin-top: 18px;
+
+  margin-bottom: 8px;
+}
+
+
+.no-card p {
+  color: #657286;
+
+  margin: 0;
+}
+
+
+.no-card button {
+  margin-top: 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 22px;
+
+  background: #168ee0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .view-card-header {
+    height: 80px;
+
+    padding: 0 20px;
+  }
+
+
+  .view-card-header-left {
+    gap: 8px;
+  }
+
+
+  .view-card-header-left h1 {
+    font-size: 20px;
+  }
+
+
+  .view-card-secure {
+    display: none;
+  }
+
+
+  .view-card-content {
+    padding: 25px 15px 40px;
+  }
+
+
+  .cards-title h2 {
+    font-size: 21px;
+  }
+
+
+  .saved-card-item {
+    padding: 17px;
+  }
+
+
+  .debit-card {
+    width: 100%;
+
+    max-width: 390px;
+
+    height: 200px;
+  }
+
+
+  .card-information {
+    grid-template-columns:
+      1fr 1fr;
+
+    padding-right: 0;
+  }
+
+
+  .delete-card-button {
+    top: 14px;
+
+    right: 14px;
+  }
+
+}

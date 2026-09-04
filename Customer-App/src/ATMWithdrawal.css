@@ -1,0 +1,405 @@
+/* =========================================
+   ATM PAGE
+========================================= */
+
+.atm-page {
+  min-height: 100vh;
+  background: #f6f9fd;
+  color: #14243a;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.atm-header {
+  height: 115px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e1e8f0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 70px;
+}
+
+
+/* Left side */
+
+.header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+/* Back button */
+
+.back-button {
+  width: 50px;
+  height: 50px;
+
+  border: none;
+
+  background: transparent;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #14243a;
+}
+
+.back-button:hover {
+  background: #f1f5fa;
+
+  border-radius: 50%;
+}
+
+
+/* Paytm-style logo text */
+
+.paytm-logo {
+  font-size: 56px;
+
+  font-weight: 700;
+
+  letter-spacing: -4px;
+
+  color: #173f7a;
+}
+
+.paytm-logo span {
+  color: #16a8e8;
+}
+
+
+/* Secure payment */
+
+.secure-payment {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #16427c;
+}
+
+.secure-payment svg {
+  color: #16427c;
+}
+
+.secure-payment div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.secure-payment strong {
+  font-size: 20px;
+
+  line-height: 1.1;
+}
+
+.secure-payment span {
+  font-size: 14px;
+
+  color: #536274;
+
+  margin-top: 4px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.atm-content {
+  padding: 35px 55px 50px;
+}
+
+
+/* Page heading */
+
+.atm-content h1 {   
+  font-size: 38px;
+
+  font-weight: 650;
+
+  color: #14243a;
+}
+
+
+/* Subtitle */
+
+.atm-subtitle {
+  margin-top: 8px;
+
+  margin-bottom: 35px;
+
+  font-size: 20px;
+
+  color: #657286;
+}
+
+
+/* =========================================
+   FOUR OPTIONS
+========================================= */
+
+.atm-options {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 26px;
+
+  width: 100%;
+}
+
+
+/* Individual card */
+
+.atm-option {
+  min-height: 300px;
+
+  background: #ffffff;
+
+  border: 2px solid #e5edf6;
+
+  border-radius: 26px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 22px 15px 20px;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* Hover */
+
+.atm-option:hover {
+  transform: translateY(-5px);
+
+  border-color: #c9dff5;
+
+  box-shadow:
+    0 10px 30px rgba(20, 70, 120, 0.10);
+}
+
+
+/* =========================================
+   ICON CIRCLE
+========================================= */
+
+.option-icon {
+  width: 130px;
+
+  height: 130px;
+
+  border-radius: 50%;
+
+  background: #eaf5ff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #145aa5;
+
+  margin-bottom: 22px;
+
+  position: relative;
+}
+
+
+/* Card icon */
+
+.card-icon-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* Add (+) badge */
+
+.plus-icon {
+  position: absolute;
+
+  right: -17px;
+
+  bottom: -12px;
+
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #1499e8;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 4px solid white;
+}
+
+
+/* =========================================
+   MASKED CARD NUMBER
+========================================= */
+
+.masked-number {
+  position: absolute;
+
+  bottom: 8px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  color: #145aa5;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   OPTION TITLE
+========================================= */
+
+.atm-option h2 {
+  margin: 0;
+
+  font-size: 21px;
+
+  line-height: 1.35;
+
+  font-weight: 600;
+
+  color: #14243a;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.option-arrow {
+  position: absolute;
+
+  bottom: 18px;
+
+  color: #536274;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .atm-options {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .atm-option {
+    min-height: 400px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .atm-header {
+    height: 85px;
+
+    padding: 0 20px;
+  }
+
+  .header-left {
+    gap: 15px;
+  }
+
+  .paytm-logo {
+    font-size: 40px;
+  }
+
+  .secure-payment {
+    display: none;
+  }
+
+  .atm-content {
+    padding: 30px 20px;
+  }
+
+  .atm-content h1 {
+    font-size: 36px;
+  }
+
+  .atm-subtitle {
+    font-size: 18px;
+
+    margin-bottom: 30px;
+  }
+
+  .atm-options {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .atm-option {
+    min-height: 350px;
+  }
+
+}
