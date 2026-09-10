@@ -281,3 +281,51 @@ Confirm Withdrawal
 Cash
 
 The actual completion time depends on ATM hardware, network connectivity, authentication and cash-dispensing speed.
+
+## 📸 Project Screenshots
+
+### 📱 Customer Application
+
+#### Customer Dashboard
+
+![Customer Dashboard](screenshots/customer-home.png)
+
+#### Debit Card Management
+
+![Debit Card Management](screenshots/debit-card.png)
+
+#### Withdraw Money
+
+![Withdraw Money](screenshots/withdraw-money.png)
+
+#### ATM Selection
+
+![ATM Selection](screenshots/atm-selection.png)
+
+#### Transaction History
+
+![Transaction History](screenshots/transaction-history.png)
+
+---
+
+### 🏧 ATM Machine Application
+
+#### ATM Welcome Screen
+
+![ATM Welcome Screen](screenshots/atm-welcome.png)
+
+#### Passcode & PIN Authentication
+
+![ATM Authentication](screenshots/atm-authentication.png)
+
+#### Withdrawal Details
+
+![Withdrawal Details](screenshots/atm-withdrawal-details.png)
+
+#### Cash Dispensing
+
+![Cash Dispensing](screenshots/atm-cash-dispensing.png)
+
+#### Transaction Successful
+
+![Transaction Successful](screenshots/atm-success.png)
