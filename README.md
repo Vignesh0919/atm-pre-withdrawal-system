@@ -329,3 +329,5 @@ The actual completion time depends on ATM hardware, network connectivity, authen
 #### Transaction Successful
 
 ![Transaction Successful](screenshots/atm-success.png)
+
+Please Check screenshots folder for APP screenshot.
